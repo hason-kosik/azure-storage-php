@@ -10,8 +10,8 @@
         }
     ],
     "require": {
-        "php": ">=5.6.0",
-		"guzzlehttp/guzzle": "~6.0|^7.0"
+        "php": ">=8.1",
+        "guzzlehttp/guzzle": "~6.0|^7.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.8.35",
@@ -24,6 +24,13 @@
         "phpmd/phpmd": "@stable",
         "phpdocumentor/phpdocumentor": "@stable"
     },
+    "replace": {
+        "microsoft/azure-storage-blob": "*",
+        "microsoft/azure-storage-common": "*",
+        "microsoft/azure-storage-file": "*",
+        "microsoft/azure-storage-queue": "*",
+        "microsoft/azure-storage-table": "*"
+    },
     "autoload": {
         "psr-4": {
             "MicrosoftAzure\\Storage\\Blob\\": "azure-storage-blob/src/Blob",
@@ -34,9 +41,9 @@
         }
     },
     "autoload-dev": {
-    	"psr-4": {
-    	    "MicrosoftAzure\\Storage\\Tests\\": "tests/"
-    	}
+        "psr-4": {
+            "MicrosoftAzure\\Storage\\Tests\\": "tests/"
+        }
     },
     "archive": {
         "exclude": ["/tests"]

@@ -1,8 +1,4 @@
-# Microsoft Azure Storage PHP Client Libraries (Deprecated)
-
-This project will be in [Community Support](https://azure.github.io/azure-sdk/policies_support.html#package-lifecycle) until 17 March 2024. After this date the project and associated client libraries will be retired permanently. For more details on the retirement and alternatives to using this project, visit [Retirement notice: The Azure Storage PHP client libraries will be retired on 17 March 2024](https://aka.ms/AzStoragePHPSDKRetirement).
-
----
+# Microsoft Azure Storage PHP Client Libraries
 
 This project provides a set of PHP client libraries that make it easy to access Microsoft Azure Storage services (blobs, tables, queues and files). For documentation on how to host PHP applications on Microsoft Azure, please see the [Microsoft Azure PHP Developer Center](http://www.windowsazure.com/en-us/develop/php/).
 
@@ -38,7 +34,7 @@ Please check details on [API reference documents](http://azure.github.io/azure-s
 
 ## Minimum Requirements
 
-* PHP 5.6 or above
+* PHP 8.1 or above
 * See [composer.json](composer.json) for dependencies
 * Required extension for PHP:
   * php_fileinfo.dll
